@@ -1,0 +1,113 @@
+@charset "UTF-8";
+
+@media print {
+    
+    main {
+        width: 90vw;
+        border: 0px;
+        border-radius: 0px;
+        outline: 0px;
+        border-radius: 20px;
+        border: 2px solid springgreen;
+    }
+    main::after {
+        content: 'pagina imprimida pelo site "www.epinews.co.ao".';
+        text-decoration: underline;
+    }
+    img#print{
+        display: block;
+    }
+    img#phone{
+        display: none;
+    }
+    img#tablet{
+        display: none;
+    }
+    img#tv{
+        display: none;
+    }
+    img#pc{
+        display: none;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body {
+        background: url(../IMAGE/back-tablet.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    img#phone {
+        display: none;
+    }
+    img#tablet {
+        display: block;
+    }
+    
+    img#tv {
+        display: none;
+    }
+    
+    img#pc {
+        display: none;
+    }
+    
+    img#print {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    body {
+        background: url(../IMAGE/back-pc.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    img#phone {
+        display: none;
+    }
+    img#tablet {
+        display: none;
+    }
+    
+    img#tv {
+        display: none;
+    }
+    
+    img#pc {
+        display: block;
+    }
+    
+    img#print {
+        display: none;
+    }    
+}
+
+@media screen and (min-width: 1200px) {
+    body {
+        background: url(../IMAGE/back-tv.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    img#phone {
+        display: none;
+    }
+    img#tablet {
+        display: none;
+    }
+    
+    img#tv {
+        display: block;
+    }
+    
+    img#pc {
+        display: none;
+    }
+    
+    img#print {
+        display: none;
+    }
+}

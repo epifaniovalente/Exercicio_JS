@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="p+t-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de idade</title>
+    <link rel="stylesheet" href="style-02.css">
+
+</head>
+<body>
+   <!--
+    <img src="image/foto-adulto-m.jpg" alt="">
+    <img src="image/foto-adulto-p.jpg" alt="">
+    <img src="image/foto-bbe-m.jpg" alt="">
+    <img src="image/foto-bbe-p.jpg" alt="">
+    <img src="image/foto-idoso-m.jpg" alt="">
+    <img src="image/foto-idoso-p.jpg" alt="">
+    <img src="image/foto-jovem-m.jpg" alt="">
+    <img src="image/foto-jovem-p.jpg" alt="">
+    <img src="image/jovem-prog-1.png" alt="">
+    <img src="image/jovem-prog-2.png" alt="">
+-->
+    <header>
+        <h1>Verificador de idade</h1>
+    </header>
+    <section>
+        <div>
+            <p>Ano de Nascimento:
+                <input type="text" name="txtano" id="txtano" min="0">
+            </p>
+            <p>Sexo: 
+                <input type="radio" name="radsex" id="mas" checked>
+                <label for="mas">Masculino</label>
+                <input type="radio" name="radsex" id="fem">
+                <label for="fem">Feminino</label>
+            </p>
+            <p>
+                <input type="button" value="Verificar" onclick="verificar()">
+
+            </p>
+        </div>
+        <div id="result">
+            Preencha os dados acima para ver o resultado!..
+        </div>
+    </section>
+    <footer>
+        <p>&copy; EpifanioValente | Todos os direitos Reservados. </p>
+    </footer>
+
+    <script src="code-02.js"></script>
+</body>
+</html>

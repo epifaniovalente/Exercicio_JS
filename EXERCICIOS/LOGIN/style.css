@@ -1,0 +1,142 @@
+@charset "UTF-8";
+
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body *{
+    box-sizing: border-box;
+}
+
+.main-login{
+    width: 100vw;
+    height: 100vh;
+    background: #201B2C;
+    display: flex;
+    justify-content: space-evenly; /* Centraliza as coisas no eixo X */
+    align-items: center; /* Centraliza as coisas no eixo Y */
+}
+
+.left-login{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Organiza os elementos um por baixo do outro */
+}
+
+.left-login h1{
+    font-size: 3vw;
+    color: #77ffc0;
+}
+
+.left-login-image{
+    width: 50vw;
+    border: 0;
+    outline: none;
+    border-radius: 15px;
+    border: 2px solid #00ff88;
+}
+
+.right-login{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-login{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: #2f2841;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+}
+
+.card-login h1{
+    color: #00ff88;
+    font-weight: 800;
+    margin: 0;
+}
+
+.textfield {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.textfield input{
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    padding: 15px;
+    color: #f0ffffde;
+    background: #514869;
+    font-size: 12pt;
+    box-shadow: 0px 10px 25px #00000056;
+    box-sizing: border-box;  /* Para os inputs ficarem na medida estabelecida das divs */
+}
+
+.textfield label{
+    color: #f0ffffde;   
+    margin-bottom: 10px;
+}
+
+.textfield input::placeholder{
+    color: #f0ffff94;
+}
+
+.btn-ogin{
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #2b134b;
+    background-color: #00ff88;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #00ff8052;
+    text-transform: uppercase; /*transformar todas as letras maiusculas */
+}
+
+@media only screen and (max-width: 950px) {
+    .card-login{
+        width: 85%;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .main-login{
+        flex-direction: column;
+    }    
+    .left-login h1{
+        display: none;
+    }
+    .left-login{
+        height: auto;
+        width: 100%;
+    }
+    .right-login{
+        height: auto;
+        width: 100%;
+    }
+    .left-login-image{
+        width: 70vw;
+    }
+    .card-login{
+        width: 90%;
+    }
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tela De Acesso</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            
+            <form action method="post">
+                <h1>Acesse Aqui!</h1>
+                <p>
+                    <label for="iusuario" class="infor">Usuário</label><br>
+                    <input type="text" class="dados" name="usuario"
+                        id="iusuario"
+                        required
+                        autocomplete="username">
+                </p>
+                <p>
+                    <label for="isenha" class="infor">Senha</label><br>
+                    <input type="text" class="dados" name="senha" id="isenha"
+                        required>
+                </p>
+                <p>
+                    <input type="checkbox" name="verificar" id="lembrar-me">
+                    <label for="lembrar-me">Lembrar-me</label>
+                    <label class="esquece-me"><a href="#">Esqueceu</a></label>
+                </p>
+                <input type="submit" value="ENTRAR">
+                <input type="reset" value="LIMPAR">
+            </form>
+        </div>
+    </body>
+
+</html>

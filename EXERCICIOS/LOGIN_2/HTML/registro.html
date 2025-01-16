@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar Registo</title>
+    <link rel="stylesheet" href="../CSS/login.css">
+    <link rel="stylesheet" href="../CSS/registo.css">
+</head>
+
+<body onload="tempo_real()">
+
+    <header>
+        <div class="logo">
+            <!--    logo    -->
+        </div>
+        <div class="entrar">
+            <a href="login.html">
+                <button type="submit" id="entrar-btn">Entrar</button>
+            </a>
+        </div>
+        
+    </header>
+    <div class="tempo">
+        <span>Tempo:</span>
+        <span id="tempo"></span>
+    </div>
+
+    <div class="fundo">
+        <form method="post" autocomplete="on">
+            <h1>Crie seu Registo</h1>
+            <div class="campo">
+                <span class="icone">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                        class="bi bi-person" viewBox="0 0 16 16">
+                        <path
+                            d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z" />
+                    </svg>
+                </span>
+                <span class="caixa">
+                    <input type="text" id="usuario" placeholder="nome completo" required minlength="15" maxlength="30">
+                </span>
+            </div>
+            <div class="campo">
+                <span class="icone">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                        class="bi bi-person-bounding-box" viewBox="0 0 16 16">
+                        <path
+                            d="M1.5 1a.5.5 0 0 0-.5.5v3a.5.5 0 0 1-1 0v-3A1.5 1.5 0 0 1 1.5 0h3a.5.5 0 0 1 0 1zM11 .5a.5.5 0 0 1 .5-.5h3A1.5 1.5 0 0 1 16 1.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 1-.5-.5M.5 11a.5.5 0 0 1 .5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 1 0 1h-3A1.5 1.5 0 0 1 0 14.5v-3a.5.5 0 0 1 .5-.5m15 0a.5.5 0 0 1 .5.5v3a1.5 1.5 0 0 1-1.5 1.5h-3a.5.5 0 0 1 0-1h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 1 .5-.5" />
+                        <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm8-9a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                    </svg>
+                </span>
+                <span class="caixa">
+                    <input type="email" id="mail" placeholder="seu e-mail" required autocomplete="email">
+                </span>
+            </div>
+            <div class="campo">
+                <span class="icone">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                        class="bi bi-person-lock" viewBox="0 0 16 16">
+                        <path
+                            d="M11 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0M8 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m0 5.996V14H3s-1 0-1-1 1-4 6-4q.845.002 1.544.107a4.5 4.5 0 0 0-.803.918A11 11 0 0 0 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664zM9 13a1 1 0 0 1 1-1v-1a2 2 0 1 1 4 0v1a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1zm3-3a1 1 0 0 0-1 1v1h2v-1a1 1 0 0 0-1-1" />
+                    </svg>
+                </span>
+                <span class="caixa">
+                    <input type="password" id="senha" placeholder="crie uma senha" required minlength="10"
+                        maxlength="18">
+                </span>
+            </div>
+            <div class="campo">
+                <span class="icone">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                        class="bi bi-person-lock" viewBox="0 0 16 16">
+                        <path
+                            d="M11 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0M8 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m0 5.996V14H3s-1 0-1-1 1-4 6-4q.845.002 1.544.107a4.5 4.5 0 0 0-.803.918A11 11 0 0 0 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664zM9 13a1 1 0 0 1 1-1v-1a2 2 0 1 1 4 0v1a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1zm3-3a1 1 0 0 0-1 1v1h2v-1a1 1 0 0 0-1-1" />
+                    </svg>
+                </span>
+                <span class="caixa">
+                    <input type="password" id="senha" placeholder="confirme sua senha" required minlength="10"
+                        maxlength="18">
+                </span>
+            </div>
+            <div class="campo">
+                <span class="icone">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                        class="bi bi-person-vcard" viewBox="0 0 16 16">
+                        <path
+                            d="M5 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4m4-2.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5M9 8a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4A.5.5 0 0 1 9 8m1 2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5" />
+                        <path
+                            d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zM1 4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H8.96q.04-.245.04-.5C9 10.567 7.21 9 5 9c-2.086 0-3.8 1.398-3.984 3.181A1 1 0 0 1 1 12z" />
+                    </svg>
+                </span>
+                <span class="caixa">
+                    <input type="text" id="autor" placeholder="Quem tu és:" list="autoridade" required>
+                    <datalist id="autoridade">
+                        <option value="ADM">Administrador</option>
+                        <option value="PROFESSOR">Professor</option>
+                        <option value="ESTUDANTE">Estudante</option>
+                    </datalist>
+                </span>
+            </div>
+            <p id="lembrete">
+                <label for="lembrar">Lembrar-me</label>
+                <input type="checkbox" name="lembrar" id="lembrar">
+            </p>
+            <div class="btn">
+                <button type="submit" id="submiti">Criar Registo</button>
+            </div>
+            <div class="btn">
+                <button type="reset" id="resetar">Limpar</button>
+            </div>
+            <p class="sms">Resgista-se e estude ao seu ritmo!</p>
+        </form>
+    </div>
+    <script src="../JS/code.js"></script>
+</body>
+
+</html>

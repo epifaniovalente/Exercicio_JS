@@ -1,0 +1,48 @@
+/* Reseta margens e paddings padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do cabeçalho fixo */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    z-index: 1000; /* Garante que o cabeçalho fique sobre outros elementos */
+}
+
+/* Espaço para o conteúdo não cobrir o cabeçalho */
+body {
+    padding-top: 60px; /* Ajuste de acordo com a altura do cabeçalho */
+}
+
+/* Estilo do conteúdo principal */
+main {
+    padding: 20px;
+    margin-top: 60px; /* Deixa o conteúdo abaixo do cabeçalho fixo */
+}
+
+/* Estilo do rodapé fixo */
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    z-index: 1000; /* Garante que o rodapé fique sobre outros elementos */
+}
+
+/* Ajuste do conteúdo para que ele não fique por baixo do rodapé fixo */
+body {
+    padding-bottom: 50px; /* Ajuste de acordo com a altura do rodapé */
+}

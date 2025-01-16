@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    /*font-family: ;*/
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding-top: 3rem;
+    background-color: #F1F1F1;
+    height: 100vh;
+}
+.container h1{
+    color: #175CFF;
+}
+
+.timer{
+    display: flex;
+    font-size: 55px;
+    font-weight: bold;
+    color: #333;
+}
+.time{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    color: #172953;
+    min-width: 90px;
+}
+
+.separador{
+    padding: 0 10px;
+    color: #525763;
+}
+
+#milesegundo{
+    font-size: 30px;
+    color: #525763;
+}
+
+.btns{
+    display: flex;
+    gap: 1rem;   
+}
+
+.btn{
+    padding: 10px 20px; 
+    font-size: 18px;
+    font-weight: bold;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+
+    cursor: pointer;
+
+    transition: all 0.2s ease-in-out;
+
+}
+
+.btn:hover{
+    transform: scale(1.1);
+}
+#startBtn{
+    background: #175CFF;
+    color: #fff;
+}
+#pauseBtn, #resumeBtn{
+    display: none;
+}

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu-Burguer</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/media-query.css">
+</head>
+
+<body onresize="mudou()">
+    <header>
+        <h1>NetWork's Technology</h1>
+        <div id="m-burger" onclick="clickmenu()">
+            <img src="../IMAGE/menu-burger.png" alt="">
+        </div>
+        <menu id="itens">
+            <ul>
+                <li id="item"><a href="">Inicio</a></li>
+                <li id="item"><a href="">tecnologias</a></li>
+                <li id="item"><a href="">Sistemas</a></li>
+                <li id="item"><a href="">Equipamentos</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <h2>GUIA TÉC PARA TI</h2>
+
+        <p>Tornar-se um técnico em redes de computadores exige o domínio de diversos tópicos fundamentais e práticos.
+            Aqui está uma lista abrangente dos temas mais relevantes:</p>
+
+        <article>
+            <h3>Fundamentos de Redes de Computadores</h3>
+            <ol>
+                <li>Conceitos básicos de redes (o que são redes, tipos de redes - LAN, WAN, MAN, etc.)</li>
+                <li>Modelos de referência OSI e TCP/IP</li>
+                <li>Endereçamento IP (IPv4 e IPv6)</li>
+                <li>Sub-redes e máscaras de rede</li>
+                <li>Protocolos de comunicação (HTTP, FTP, SMTP, DNS, DHCP, etc.)</li>
+            </ol>
+        </article>
+
+        <article>
+            <h3>Equipamentos de Redes</h3>
+            <ol>
+                <li>Roteadores, switches e access points</li>
+                <li>Cabos de rede (par trançado, fibra óptica, coaxial) e conectores</li>
+                <li>Ferramentas de montagem e testes (testadores de cabo, crimpar conectores)</li>
+                <li>Interfaces de rede e dispositivos de hardware</li>
+            </ol>
+        </article>
+
+        <article>
+            <h3>Tecnologias de Redes</h3>
+            <ul>
+                <li>Ethernet e Wi-Fi (802.11)</li>
+                <li>VLANs (Redes Locais Virtuais)</li>
+                <li>VPNs (Redes Privadas Virtuais)</li>
+                <li>Redes definidas por software (SDN)</li>
+                <li>Conceitos de redes móveis e 5G</li>
+            </ul>
+        </article>
+
+        <article>
+            <h3>Configuração de Redes</h3>
+            <ol>
+                <li>Configuração de roteadores e switches</li>
+                <li>Design e implementação de redes locais (LANs)</li>
+                <li>Configuração de redes sem fio (Wi-Fi)</li>
+                <li>NAT, PAT e firewall básico</li>
+            </ol>
+        </article>
+
+        <article>
+            <h3>Segurança de Redes</h3>
+            <ol>
+                <li>Princípios de segurança cibernética</li>
+                <li>Configuração de firewalls</li>
+                <li>Detecção e prevenção de intrusões</li>
+                <li>Criptografia e VPNs seguras</li>
+                <li>Boas práticas contra ataques como phishing, DDoS, malware</li>
+            </ol>
+        </article>
+
+        <article>
+            <h3>Sistemas Operacionais de Redes</h3>
+            <ol>
+                <li>Windows Server</li>
+                <li>Linux (distribuições voltadas para redes, como Ubuntu Server ou CentOS)</li>
+                <li>Ferramentas e serviços (DNS, DHCP, servidor web, Samba)</li>
+            </ol>
+        </article>
+
+        <article>
+            <h3>Monitoramento e Diagnóstico de Redes</h3>
+            <ol>
+                <li>Ferramentas de monitoramento (ex: Nagios, Zabbix)</li>
+                <li>Análise de pacotes com Wireshark</li>
+                <li>Diagnóstico de problemas com ferramentas como `ping`, `tracert`, e `nslookup`</li>
+                <li>Logs e métricas de desempenho</li>
+            </ol>
+        </article>
+
+        <article>
+            <h3>Automação e Scripting</h3>
+            <ol>
+                <li>Noções básicas de programação (Python é muito utilizado)</li>
+                <li>Automação de tarefas com scripts</li>
+                <li>Ferramentas como Ansible e Puppet para configuração automatizada de redes</li>
+            </ol>
+        </article>
+
+        <article>
+            <h3>Computação em Nuvem e Virtualização</h3>
+            <ol>
+                <li>Introdução a provedores de nuvem (AWS, Azure, Google Cloud)</li>
+                <li>Configuração de redes virtuais na nuvem</li>
+                <li>Conceitos de virtualização com VMware, VirtualBox, Hyper-V</li>
+                <li>Contêineres e Kubernetes</li>
+            </ol>
+        </article>
+
+        <article>
+            <p>
+                Certificações e Atualização Contínua. <br>
+                Certificações básicas e intermediárias recomendadas:
+            </p>
+            <ul>
+                <li>CompTIA Network+</li>
+                <li>Cisco CCNA</li>
+                <li>MikroTik MTCNA</li>
+                <li>Linux LPIC-1</li>
+                <li>AWS Certified Cloud Practitioner</li>
+            </ul>
+            <p>
+                Manter-se atualizado com as tendências da área. <br>
+                Estudar esses tópicos de forma sistemática, combinando teoria e prática, ajudará a desenvolver as
+                habilidades necessárias para atuar como técnico em redes de computadores.
+            </p>
+        </article>
+
+    </main>
+    <footer>
+        <p>&copy; Exercício menu-burguer. | Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        function clickmenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+        function mudou() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+    </script>
+</body>
+
+</html>

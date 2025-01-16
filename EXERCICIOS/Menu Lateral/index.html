@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu Lateral</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+    }
+
+    /* Estilo do menu lateral */
+    .menu-lateral {
+      width: 250px;
+      height: 100vh;
+      background-color: #333;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+
+    .menu-lateral h2 {
+      margin-bottom: 20px;
+    }
+
+    .menu-lateral a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 0;
+      border-bottom:1px solid #444;
+      transition: background-color 0.3s;
+    }
+
+    .menu-lateral a:hover {
+      background-color: #444;
+    }
+
+    /* Conteúdo principal */
+    .conteudo {
+      margin-left: 250px; /* Espaço para o menu */
+      padding: 20px;
+      width: 100%;
+    }
+
+    .conteudo h1 {
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Menu lateral -->
+  <div class="menu-lateral">
+    <h2>Menu</h2>
+    <a href="#home">Home</a>
+    <a href="#sobre">Sobre</a>
+    <a href="#servicos">Serviços</a>
+    <a href="#contato">Contato</a>
+  </div>
+
+  <!-- Conteúdo principal -->
+  <div class="conteudo">
+    <h1>Bem-vindo ao site</h1>
+    <p>
+      Este é um exemplo de página com um menu lateral fixo. Você pode adicionar
+      mais conteúdo aqui e personalizar conforme necessário.
+    </p>
+    <h2 id="home">Home</h2>
+    <p>Conteúdo da seção Home.</p>
+    <h2 id="sobre">Sobre</h2>
+    <p>Conteúdo da seção Sobre.</p>
+    <h2 id="servicos">Serviços</h2>
+    <p>Conteúdo da seção Serviços.</p>
+    <h2 id="contato">Contato</h2>
+    <p>Conteúdo da seção Contato.</p>
+  </div>
+</body>
+</html>
